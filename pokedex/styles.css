@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.478), rgba(255, 255, 255, 0.823)), url('/images/pokemon.jpg');
+  background-size: cover; 
+  background-position: bottom; 
+  background-repeat: repeat;
+  background-attachment: fixed; 
+}
+
+.kranky-regular {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dialog {
+  width: 60%;
+}
+
+p, .storage, .close, .more {
+  font-family: "Kranky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name, .type, .moves, .title-header {
+  font-weight: bold;
+}
+
+.close, .storage, .more {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.type-details, .moves-details {
+  font-size: 2rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+img, .close, .storage, .more {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background:rgba(186, 186, 186, 0.212);
+  border:solid 3px rgb(60, 59, 59);
+}
+
+.dialog {
+
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 3px rgb(60, 59, 59);
+
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.storage {
+  width: 100%;
+}
+
+.catch-style {
+  background-color: rgba(48, 48, 48, 0.177);
+}
+
+.pokemon {
+  position: relative; 
+}
+
+.pokemon span {
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.638);
+  border: 10px solid rgba(0, 0, 0, 0.511);
+  border-radius: 60%;
+  position: absolute;
+  top: 20%; 
+  left: 20%; 
+  z-index: 1; 
+  rotate: 45deg;
+}
+
+.gochi-hand-regular, .pokemon span {
+  font-family: "Gochi Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 20px; 
+}
+
+.btn {
+  margin-right: 30px;
+}

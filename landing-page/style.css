@@ -1,0 +1,278 @@
+.logo {
+  margin-left: 7%;
+}
+
+.logo-icon {
+  width: 100px;
+}
+
+header {
+  height: 10%;
+}
+
+main {
+  height: 75%;
+}
+
+.home-page{
+  border: 2px solid black;
+  color: black;
+  margin: 30%;
+}
+
+.container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content:space-between;
+}
+
+.container-cal {
+  display: flex;
+  justify-content:space-between;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #F7F7FF;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/bg-image/scooter.svg");
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 30%;
+  height: 100vh;
+}
+
+.title {
+  color: #333131;
+  margin-left: 7%;
+  width: 25%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.title p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.form {
+  margin-top: 4%;
+  margin-right: 7%;
+  width: 300px;
+  height: 380px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow:rgba(0,0,0,.3) 5px 5px 15px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form h2 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.form p {
+  margin: 0;
+  padding: 0;
+}
+
+input[type=text] {
+  border-radius: 8px;
+  background-color: #ababac23;
+  border: none;
+  width: 288px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.box {
+  display: flex;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#btn {
+  background-color: #57EEAB;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+#btn::placeholder {
+  color: black;
+}
+
+.form p:nth-child(9) {
+  font-size: 11px;
+  text-align: center;
+}
+
+a {
+  color: orange;
+  text-decoration: none; 
+}
+
+footer {
+  background-color: #FFFD8C;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cal {
+  padding-left: 7%;
+}
+
+.cal p{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.cal p:nth-child(2) {
+  font-size: 13px;
+  font-weight: initial;
+}
+
+#hours {
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+#city {
+  background-color: white;
+  width: 180px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+#hours::placeholder, #city::placeholder {
+  color: #373535;
+}
+
+#calculate {
+  background-color: #FF8480;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#calculate::placeholder {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 7%;
+  display: flex;
+  width: 200px;
+  justify-content:space-between;
+}
+
+.icon img {
+  width: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: none;
+    height: auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    width: auto;
+  }
+  .title h1, .title p, .form, .icon{
+    margin: 0;
+  }
+  .blank {
+    width: 100vw;
+    height: 400px;
+    background-image: url("/images/bg-image/scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .container-cal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  #calculate {
+    width: 85%;
+    margin-top: 3%;
+  }
+  .icon {
+    margin-top: 5%;
+  }
+  footer {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 769px)  {
+  .logo {
+    margin-left: 15%;
+  }
+  body {
+    background-image: none;
+    height: auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    width: 60%;
+    margin: 0%;
+  }
+  .title h1, .title p, .form, .icon{
+    margin: 0;
+  }
+  .blank {
+    width: 100vw;
+    height: 400px;
+    background-image: url("/images/bg-image/scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .container-cal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .icon, .form {
+    margin-top: 5%;
+  }
+  footer {
+    margin-top: 10%;
+    padding-top: 5%;
+  }
+}
